@@ -8,10 +8,16 @@ const alunos = [
   ];
 
   // Função que retorna apenas os alunos com nota >= 6
-function filtrarAprovados(lista) {
-    return lista.filter(aluno => aluno.nota >= 6);
-  }
+// function filtrarAprovados(lista) {
+//     return lista.filter(aluno => aluno.nota >= 6);
+//   }
+
+const alunosAprovados = alunos.filter(function(item) {
+    return item.nota >= 6;
+})
   
   // Testando a função
-  const aprovados = filtrarAprovados(alunos);
-  console.log("Alunos aprovados:", aprovados);
+//   const aprovados = filtrarAprovados(alunos);
+//   console.log("Alunos aprovados:", aprovados);
+
+  console.log("Alunos aprovados:", alunosAprovados);
